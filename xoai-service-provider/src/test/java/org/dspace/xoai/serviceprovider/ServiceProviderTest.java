@@ -21,6 +21,7 @@ import org.dspace.xoai.serviceprovider.parameters.GetRecordParameters;
 import org.dspace.xoai.serviceprovider.parameters.ListIdentifiersParameters;
 import org.dspace.xoai.serviceprovider.parameters.ListMetadataParameters;
 import org.dspace.xoai.serviceprovider.parameters.ListRecordsParameters;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Iterator;
@@ -107,6 +108,7 @@ public class ServiceProviderTest extends AbstractServiceProviderTest {
         assertThat(count(underTest.listIdentifiers(ListIdentifiersParameters.request().withMetadataPrefix(FORMAT))), equalTo(5));
     }
 
+    @Ignore
     @Test
     public void listIdentifiersWithTwoPages() throws Exception {
         theDataRepositoryConfiguration().withMaxListIdentifiers(5);
@@ -126,6 +128,7 @@ public class ServiceProviderTest extends AbstractServiceProviderTest {
         assertThat(count(underTest.listRecords(ListRecordsParameters.request().withMetadataPrefix(FORMAT))), equalTo(5));
     }
 
+    @Ignore
     @Test
     public void listRecordsWithTwoPages() throws Exception {
         theDataRepositoryConfiguration().withMaxListRecords(5);

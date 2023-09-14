@@ -66,10 +66,6 @@ public class Parameters {
 
     public Parameters withResumptionToken(String value) {
         this.resumptionToken = value;
-        this.metadataPrefix = null;
-        this.until = null;
-        this.set = null;
-        this.from = null;
         return this;
     }
 
