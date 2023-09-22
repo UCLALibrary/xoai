@@ -36,7 +36,7 @@ XOAI has been released under several Maven central groupIDs:
 Building the project
 ---
 
-JDK 8 or later is required to build the project with the latest Maven 3 releases (tested and confirmed with 3.8.7):
+JDK 8 is required to build the project with the latest Maven 3 releases (tested and confirmed with 3.8.7):
   ```
   mvn clean install
   ```
